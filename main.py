@@ -1,5 +1,6 @@
-# Write a main function that uses get_book_text with the relative path 
-# to your frankenstein.txt file to print the entire contents of the book to the console.
+# Write a main function that uses get_book_text with the relative path
+# to your frankenstein.txt file to print the entire contents 
+# of the book to the console.
 from stats import get_num_words, get_num_chars, sort_dict
 import sys
 
@@ -8,7 +9,7 @@ def get_book_text(book):
     with open(book) as f:
         text = f.read()
     return text
-    
+
 
 def main():
     book = sys.argv[1]
@@ -32,3 +33,4 @@ if __name__ == '__main__':
         sys.exit(1)
     else:
         main()
+        
